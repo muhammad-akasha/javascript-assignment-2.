@@ -26,10 +26,19 @@ alert(my_age);
 
 alert(education);
 
-let a_tasty_pizza =
-"pizza" + "\n" + "pizz" + "\n" + "piz" + "\n" + "pi" + "\n" + "p";
+// let a_tasty_pizza =
+// "pizza" + "\n" + "pizz" + "\n" + "piz" + "\n" + "pi" + "\n" + "p";
 
-alert(a_tasty_pizza);
+// alert(a_tasty_pizza);
+let piz = "pizza";
+
+let result = "";
+
+for (let i = 0 ; i <= piz.length ; i++){
+    result += piz.slice(0 , piz.length - i ) + "\n"
+}
+
+alert(result)
 
 let email = "my email address is";
 let email_adress = " example@example.com ";
